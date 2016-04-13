@@ -3,6 +3,7 @@ package com.example.ankithbti.testme;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 /**
  * Created by ankithbti on 10/04/16.
  */
-public class NewActivity extends Activity{
+public class NewActivity extends Base_Activity {
 
     private final String TAG = "Ankit - New Activity";
 
@@ -20,10 +21,19 @@ public class NewActivity extends Activity{
     public String myDob;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //super.onCreateOptionsMenu(menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.new_activity_menu, menu);
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, " On Create.");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_activity);
+//        setContentView(R.layout.new_activity);
+        setContentView(R.layout.new_frame_activity);
         myName = getIntent().getStringExtra("myname");
         myAge = getIntent().getStringExtra("myage");
         myDob = getIntent().getStringExtra("mydob");

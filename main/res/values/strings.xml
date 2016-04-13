@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">MyApp</string>
-    <string name="action_settings">MyInfo</string>
+    <string name="back">Back</string>
     <string name="btn1">HitMe</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
     <string name="dob">DOB</string>
+    <string name="myinfo">MyInfo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -9,14 +9,8 @@
         android:icon="@drawable/home"
         app:showAsAction="always" />
     <item
-        android:id="@+id/twitter"
-        android:orderInCategory="3"
-        android:title="twitter"
-        android:icon="@drawable/twitter"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/facebook"
-        android:orderInCategory="4"
+        android:orderInCategory="3"
         android:title="facebook"
         android:icon="@drawable/facebook"
         app:showAsAction="always" />
