@@ -29,15 +29,17 @@ public class MainActivity extends Base_Activity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, " On Create.");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_frame_activity);
+        setContentView(R.layout.new_activity);
+
+        //setContentView(R.layout.new_frame_activity);
 
         // For adding fragment
         FragmentManager fragMgr = getSupportFragmentManager();
         FragmentTransaction fragTrans = fragMgr.beginTransaction();
-
-        // Replace the frame
+//
+//        // Replace the frame
         fragTrans.replace(R.id.fragFrame, sideFrag, "SIDE");
-
+//
         fragTrans.addToBackStack(null);
         fragTrans.commit();
 

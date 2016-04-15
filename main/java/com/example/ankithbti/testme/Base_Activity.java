@@ -3,6 +3,7 @@ package com.example.ankithbti.testme;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 //import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +11,7 @@ import android.view.MenuItem;
 /**
  * Created by ankithbti on 11/04/16.
  */
-public class Base_Activity extends FragmentActivity {
+public class Base_Activity extends ActionBarActivity {
 
     static int NUM = 100;
     private final String TAG = "Ankit - Base Activity";
